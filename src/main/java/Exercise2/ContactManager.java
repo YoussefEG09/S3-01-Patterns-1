@@ -12,9 +12,15 @@ public class ContactManager {
 
     public void addContacts(Contact contact) {
         contacts.add(contact);
+        System.out.println("Contact successfully added.");
     }
 
     public void showContacts() {
+        if (contacts.isEmpty()){
+            System.out.println("No contacts in list.");
+            return;
+        }
+        System.out.println("=== Contact list ===");
         for (Contact c : contacts) {
             System.out.println(c);
         }
