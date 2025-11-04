@@ -6,7 +6,7 @@ import Exercise2.Products.PhoneNumber;
 import Exercise2.Products.SpainAddress;
 import Exercise2.Products.SpainPhoneNumber;
 
-public class SpainFactory implements ContactFactory {
+public class SpainFactory extends ContactFactory {
 
     @Override
     public Address createAddress(String street, String city){
