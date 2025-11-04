@@ -1,17 +1,17 @@
 package Exercise2.Products;
 
 public class SpainPhoneNumber implements PhoneNumber {
-    private String areaCode;
+    private String code;
     private String number;
 
-    public SpainPhoneNumber(String areaCode, String number) {
-        this.areaCode = areaCode;
+    public SpainPhoneNumber(String code, String number) {
+        this.code = code;
         this.number = number;
     }
 
     @Override
     public String getPhoneNumber(){
-        return "+" + areaCode + " " + number;
+        return "+" + code + " " + number;
     }
 
 }

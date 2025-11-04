@@ -8,4 +8,15 @@ import Exercise2.Products.SpainPhoneNumber;
 
 public class SpainFactory implements ContactFactory {
 
+    @Override
+    public Address createAddress(String street, String city){
+        return new SpainAddress(street , city);
+    }
+
+    @Override
+    public PhoneNumber createPhoneNumber(String code, String number) {
+        return new SpainPhoneNumber(code, number);
+    }
+}
+
 
