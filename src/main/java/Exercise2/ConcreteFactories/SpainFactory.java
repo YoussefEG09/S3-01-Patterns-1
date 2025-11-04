@@ -14,7 +14,8 @@ public class SpainFactory extends ContactFactory {
     }
 
     @Override
-    public PhoneNumber createPhoneNumber(String code, String number) {
+    public PhoneNumber createPhoneNumber(String number) {
+        String code = "34";
         return new SpainPhoneNumber(code, number);
     }
 }
